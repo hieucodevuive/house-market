@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* image container for catagory */
+.Imagecontainer{
+  position: relative;
+  width: 100%;
+  max-width: 500px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Imagecontainer img {
+  width: 100%;
+  height: auto;
 }
+
+.Imagecontainer .btn {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.Imagecontainer .btn:hover {
+  background-color: #000000;
+}
+
+/* */
+.category-link a{
+  text-decoration: none !important;
+  color: black;
+  line-height: normal;
+}
+.swiper-image-container {
+  height: 400px; /* Độ cao bạn muốn đặt cho SwiperSlide */
+  text-align: center;
+}
+/*Home swiper*/
+
+.home-swiper {
+  height: 600px; /* Độ cao bạn muốn đặt cho SwiperSlide */
+  text-align: center;
+  max-height: 600px;
+  min-height: 600px;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .container-fluid {
+    padding: 0;
+    margin-top: 0;
+  }
+  .home-swiper {
+    height: 400px;
+    min-height: fit-content;
+  }
+}
+
+.home-swiper img{
+  object-fit: cover; /* Đảm bảo ảnh không bị méo và vừa với khung hình */
+  max-width: 100%; /* Đảm bảo ảnh không bị tràn ra khỏi khung hình */
+  max-height: 100%; /* Đảm bảo ảnh không bị tràn ra khỏi khung hình */
+  width: 100%; /* Đảm bảo ảnh không bị kéo dãn ngang */
+}
+
+/*listing swiper*/
+.listing-swiper img{
+  object-fit: cover; /* Đảm bảo ảnh không bị méo và vừa với khung hình */
+  max-width: 100%; /* Đảm bảo ảnh không bị tràn ra khỏi khung hình */
+  max-height: 100%; /* Đảm bảo ảnh không bị tràn ra khỏi khung hình */
+  width: 100%; /* Đảm bảo ảnh không bị kéo dãn ngang */
+  height: 100%;
+}
+
+
